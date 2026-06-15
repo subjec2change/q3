@@ -1,4 +1,4 @@
-# Shake Deployment Guide
+# Quake 3:TA Boomer Break Deployment Guide
 
 Host your own web-based Quake III Arena LAN party with HTTPS support.
 
