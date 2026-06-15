@@ -16,6 +16,6 @@ want to play a different map from the demo? append `?map=q3dm7` (options are `q3
 
 ## disclaimer
 
-this is a very minimal scrape and remix of the extremely cool XanderStrike/shake who's source can be found [here](https://github.com/XanderStrike/shake) and [here](https://github.com/jdarpinian/HumbleNet)
-
-inspired by how I wanted the full game to work with only IP's and not full domains and also to use caddy to serve the whole dam thing and it work in the office.
+Based on [shake](https://github.com/xanderstrike/shake) by XanderStrike, which builds on:
+- [ioquake3](https://github.com/jdarpinian/ioq3) by jdarpinian
+- [HumbleNet](https://github.com/jdarpinian/HumbleNet) by jdarpinian
