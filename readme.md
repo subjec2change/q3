@@ -1,4 +1,4 @@
-# shake
+# Quake 3:TA Boomer Break
 
 host your own web-based quake lan party.
 
