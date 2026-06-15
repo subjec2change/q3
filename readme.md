@@ -1,4 +1,4 @@
-# shake
+# Q3:TEAM ARENA Boomer Break
 
 host your own web-based quake lan party.
 
@@ -6,16 +6,16 @@ host your own web-based quake lan party.
 
 download the [docker-compose.yml](https://raw.githubusercontent.com/subjec2change/q3/refs/heads/main/docker-compose.yml) and run `docker compose up`.
 
-visit <server-ip>:8081 and play.
+visit <server-ip> and play.
 
-to keep things simple every visitor will join the same lobby by default, but if you want a private game you can append `?server=whatever` and share that link
+to keep things simple every visitor will join the same lobby by default, but if you want a private game you can append `?server=whatever` or what ever the url is and share that link
 
-don't have friends? no problem, activate bots by appending `?lonely`
+don't have friends? no problem, activate bots by appending `?lonely` or use the setup button
 
-want to play a different map from the demo? append `?map=q3dm7` (options are `q3dm1`, `q3dm7`, `q3dm17`, `q3tourney2`)
+want to play a different map from the demo? append `?map=q3dm7` (options are `q3dm1`, `q3dm7`, `q3dm17`, `q3tourney2`) or again use the setup button
 
 ## disclaimer
 
-this is a very minimal scrape and remix of the extremely cool https://thelongestyard.link/ who's source can be found [here](https://github.com/jdarpinian/ioq3) and [here](https://github.com/jdarpinian/HumbleNet)
+this is a very minimal scrape and remix of the extremely cool XanderStrike/shake who's source can be found [here](https://github.com/XanderStrike/shake) and [here](https://github.com/jdarpinian/HumbleNet)
 
 inspired by how i've previously used the now-abandoned [quake-kube](https://github.com/criticalstack/quake-kube)
