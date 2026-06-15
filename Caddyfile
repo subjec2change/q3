@@ -10,7 +10,15 @@
 
 https://10.X.X.X {
     tls internal
-    encode zstd gzip
+    # Cache all .pk3 for 1 year (no re-download if unchanged)
+@pk3 path_regexp pk3 \.pk3$
+header @pk3 Cache-Control "public, max-age=31536000, immutable"
+
+# If you already use encode, exclude .pk3 from gzip/zstd
+@compressible {
+    not path_regexp pk3 \.pk3$
+}
+encode @compressible zstd gzip
 
     handle /peer* {
         uri strip_prefix /peer
@@ -26,5 +34,6 @@ https://10.X.X.X {
         reverse_proxy localhost:8081
     }
 }
+
 # Refer to the Caddy docs for more information:
 # https://caddyserver.com/docs/caddyfile
