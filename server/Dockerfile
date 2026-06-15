@@ -29,6 +29,11 @@ RUN make peer-server
 # Run Stage
 FROM ubuntu:24.04
 
+# Install netcat for healthcheck
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends netcat-openbsd && \
+    rm -rf /var/lib/apt/lists/*
+
 WORKDIR /app
 
 # Copy the peer-server binary from the build stage
